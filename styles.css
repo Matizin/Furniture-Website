@@ -1,0 +1,31 @@
+.nav-bar {
+    background-color: #C8BFC7;
+    height: 85px;
+}
+
+.video-presentation {
+    background-color: #7A9B76;
+    height: 500px;
+}
+
+.top-sales {
+    background-color: #8A7E72;
+    height: 200px;
+}
+
+.store-location {
+    background-color: #5A2328;
+    height: 300px;
+}
+
+.space {
+    background-color: #7A9B76;
+    height: 500px;
+}
+
+.about-us {
+    background-color: #C8BFC7;
+    height: 120px;
+}
+
+/*# sourceMappingURL=styles.css.map */
