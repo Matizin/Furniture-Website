@@ -21,7 +21,13 @@ $fourcolor: #5A2328;
 
 .store-location {
     background-color: $fourcolor;
-    height: 300px;
+  
+    height: 100%;
+    width: 100%;
+    
+}
+.map-container{
+    margin: 0px 30px 30px 30px;
 }
 
 .about-us {
@@ -35,14 +41,98 @@ $fourcolor: #5A2328;
     flex-direction: column;
 }
 
+a:hover{
+    cursor: pointer; 
+    color: $secondaryColor;
+}
+
+
+.socialmedia i:hover{
+    cursor: pointer; 
+    color: $secondaryColor;
+}
 .threediviation{
+    .threediviation div{
+       //3つのdivのそれぞれの幅を広げたい
+    }
+    .footer-middle{ 
+        li{
+        list-style:none;
+    }
+    a{
+        text-decoration: none;
+        color: $fourcolor;
+    }
+    a:hover{
+        cursor: pointer; 
+        color: $secondaryColor;
+    }
+}
+.footer-right{ 
+    li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: $fourcolor;
+}
+a:hover{
+    cursor: pointer; 
+    color: $secondaryColor;
+}
+}
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        div.subscription-input{
+            
+            display:flex;
+            flex-direction: row;
+        }
+
+    }
+
+    input{
+        // width: 100%;
+        height: 40px;
+
+    }
+    button.subscribe{
+        display: inline-block;
+        border: none;
+
+    }
     position:relative;
+    font-size: 20px;
 }
 iframe{
-    position: static;
-    width:700px;
-     height:800px;
-     
+    position: relative;
+    width:100%;
+    height:600px;
+    
+}
+.cp_hr01 {
+    width:60%;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: black;
 }
 
+.socialmedia{
+    display:flex;
+    justify-content: space-around;
 
+    i{//ネストしたけど、すべてのアイコンに影響する？
+        font-size: 60px;
+    }
+}
+.threediviation{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+p.copyright  {
+    text-align: center;
+}
