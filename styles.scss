@@ -28,3 +28,21 @@ $fourcolor: #5A2328;
     background-color: $primaryColor;
     height: 120px;
 }
+
+.wrapper{
+    position:static;
+    display:flex;
+    flex-direction: column;
+}
+
+.threediviation{
+    position:relative;
+}
+iframe{
+    position: static;
+    width:700px;
+     height:800px;
+     
+}
+
+

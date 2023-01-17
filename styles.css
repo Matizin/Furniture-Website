@@ -1,31 +1,40 @@
 .nav-bar {
-    background-color: #C8BFC7;
-    height: 85px;
+  background-color: #C8BFC7;
+  height: 85px;
 }
 
 .video-presentation {
-    background-color: #7A9B76;
-    height: 500px;
+  background-color: #7A9B76;
+  height: 500px;
 }
 
 .top-sales {
-    background-color: #8A7E72;
-    height: 200px;
+  background-color: #8A7E72;
+  height: 200px;
 }
 
 .store-location {
-    background-color: #5A2328;
-    height: 300px;
-}
-
-.space {
-    background-color: #7A9B76;
-    height: 500px;
+  background-color: #5A2328;
+  height: 300px;
 }
 
 .about-us {
-    background-color: #C8BFC7;
-    height: 120px;
+  background-color: #C8BFC7;
+  height: 120px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.wrapper {
+  position: static;
+  display: flex;
+  flex-direction: column;
+}
+
+.threediviation {
+  position: relative;
+}
+
+iframe {
+  position: static;
+  width: 700px;
+  height: 800px;
+}/*# sourceMappingURL=styles.css.map */
