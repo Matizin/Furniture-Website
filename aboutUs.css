@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+.head {
+  background-color: #8A7E72;
+  height: 80px;
+}
+
+p.company-description {
+  font-size: 30px;
+}
+
+div.about-members {
+  display: flex;
+  justify-content: center;
+}
+
+div.about-us img {
+  width: 100%;
+}
+
+div.about-mateUs {
+  background-color: white;
+  margin: 5px;
+  box-shadow: 5px 10px gray;
+  padding: 10px;
+  text-align: center;
+}
+div.about-mateUs .room-image img {
+  width: 100%;
+  height: 200px;
+}
+div.about-mateUs h1 {
+  text-align: center;
+}
+
+div.about-members::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.face-photo-container img {
+  border-radius: 50%;
+}
+
+.ourName {
+  text-align: center;
+  height: 50px;
+}
+
+.descriptionOfUs {
+  padding-bottom: 30px;
+}/*# sourceMappingURL=aboutUs.css.map */

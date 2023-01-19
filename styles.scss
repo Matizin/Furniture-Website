@@ -3,6 +3,8 @@ $secondaryColor: #7A9B76;
 $thirdcolor: #8A7E72;
 $fourcolor: #5A2328;
 
+@import "aboutUs.scss";
+
 .nav-bar {
     background-color: $primaryColor;
     height: 85px;
@@ -21,118 +23,154 @@ $fourcolor: #5A2328;
 
 .store-location {
     background-color: $fourcolor;
-  
+
     height: 100%;
     width: 100%;
-    
+
 }
-.map-container{
+
+.map-container {
     margin: 0px 30px 30px 30px;
 }
 
 .about-us {
     background-color: $primaryColor;
-    height: 120px;
+    height: auto;
 }
 
-.wrapper{
-    position:static;
-    display:flex;
+footer.about-us{
+    background-color: $primaryColor;//なぜ下まで伸びない？
+    width:auto;
+    height:auto;
+}
+
+.wrapper {
+    position: static;
+    display: flex;
     flex-direction: column;
 }
 
-a:hover{
-    cursor: pointer; 
+a:hover {
+    cursor: pointer;
     color: $secondaryColor;
 }
 
 
-.socialmedia i:hover{
-    cursor: pointer; 
+.socialmedia i:hover {
+    cursor: pointer;
     color: $secondaryColor;
 }
-.threediviation{
-    .threediviation div{
-       //3つのdivのそれぞれの幅を広げたい
+
+.threediviation {
+    .threediviation div {
+        //3つのdivのそれぞれの幅を広げたい
     }
-    .footer-middle{ 
-        li{
-        list-style:none;
+
+    .footer-middle {
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: $fourcolor;
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: $secondaryColor;
+        }
     }
-    a{
-        text-decoration: none;
-        color: $fourcolor;
+
+    .footer-right {
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: $fourcolor;
+        }
+
+        a:hover {
+            cursor: pointer;
+            color: $secondaryColor;
+        }
     }
-    a:hover{
-        cursor: pointer; 
-        color: $secondaryColor;
-    }
-}
-.footer-right{ 
-    li{
-    list-style:none;
-}
-a{
-    text-decoration: none;
-    color: $fourcolor;
-}
-a:hover{
-    cursor: pointer; 
-    color: $secondaryColor;
-}
-}
-    .footer-left{
+
+    .footer-left {
         display: flex;
         flex-direction: column;
         align-content: center;
-        div.subscription-input{
-            
-            display:flex;
-            flex-direction: row;
-        }
 
+        div.subscription-input {
+            display: flex;
+            flex-direction: row;
+            // font-size: 20px;
+        }
+        input::placeholder{
+            font-size: 16px;
+        }
     }
 
-    input{
+    input {
         // width: 100%;
         height: 40px;
 
     }
-    button.subscribe{
+
+    button.subscribe {
+        width:auto;
+        height:30px;
         display: inline-block;
         border: none;
 
+        
     }
+    button.subscribe:hover {
+        cursor: pointer;
+        background-color: $primaryColor;
+        border: #8A7E72 solid 2px;
+
+    }
+
+
     position:relative;
     font-size: 20px;
 }
-iframe{
+
+iframe {
     position: relative;
-    width:100%;
-    height:600px;
-    
-}
-.cp_hr01 {
-    width:60%;
-	border-width: 1px 0 0 0;
-	border-style: solid;
-	border-color: black;
+    width: 100%;
+    height: 600px;
+
 }
 
-.socialmedia{
-    display:flex;
+.cp_hr01 {
+    width: 60%;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: black;
+}
+
+.socialmedia {
+    display: flex;
     justify-content: space-around;
 
-    i{//ネストしたけど、すべてのアイコンに影響する？
+    i {
+        //ネストしたけど、すべてのアイコンに影響する？
         font-size: 60px;
     }
 }
-.threediviation{
-    display:flex;
+
+.threediviation {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-p.copyright  {
+p.copyright {
     text-align: center;
+    // padding-bottom: 100px;
 }
+
