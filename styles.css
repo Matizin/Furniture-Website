@@ -203,6 +203,7 @@ iframe {
 }
 
 .socialmedia {
+  padding-top: 30px;
   display: flex;
   justify-content: space-around;
 }
@@ -218,4 +219,28 @@ iframe {
 
 p.copyright {
   text-align: center;
+}
+
+@media (max-width: 820px) {
+  .threediviation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+  .socialmedia {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }/*# sourceMappingURL=styles.css.map */
