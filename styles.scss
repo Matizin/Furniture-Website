@@ -1,0 +1,146 @@
+@import 'https://fonts.googleapis.com/css2?family=Satisfy&display=swap';
+
+$primaryColor: #C8BFC7;
+$secondaryColor: #7A9B76;
+$thirdcolor: #8A7E72;
+$fourcolor: #5A2328;
+
+
+// HEADER DESIGN 
+
+
+@mixin nav-links{
+    margin-top: 15px;
+    margin-right: 40px;
+    display: inline-block;
+    margin-left: 40px;
+    text-decoration: none;
+    color: $fourcolor;
+    float: center;
+}
+
+
+body{
+    font-family:'Satisfy';
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.loader {
+    transition: 0.3s cubic-bezier(1, 0.01, 0.29, 1.01);
+    background-color: $primaryColor;
+    left: 0;
+    right: 100%;
+    position: absolute; 
+    height: 100vh;
+    z-index: 101;
+  
+  i {
+    position: fixed;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+  color: $fourcolor;
+  }
+}
+  
+
+#menu{
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    list-style: none;
+    background-color: $thirdcolor;
+}
+
+.nav-bar{
+    align-items: center;
+     grid-row: span;
+}
+
+.fa-bars{
+    display: none;
+}
+
+
+.logo{
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin: 0px;
+    border-radius: 20%;
+    margin: 10px
+}
+
+ nav ul{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+
+ nav li, a{
+
+     @include nav-links();
+
+  & :hover{
+    list-style: none;
+    text-decoration: none;
+     color: $primaryColor;
+     cursor: pointer;
+     transition: 0.5s;
+     
+ }
+ }
+
+#cart{
+    padding: 10px;
+    width: 50px;
+    float: right;
+    @include nav-links();
+    
+}
+
+.video-presentation{
+    height: 340px;
+    background-image: url(https://i.giphy.com/media/JGdbbSyi3wM9uBKv8p/giphy.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $fourcolor;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+// RESPONSIVE DESIGN OF HEADER
+
+@media (max-width: 820px) {
+    .toggle-button{
+        display: flex;
+    }
+
+    .fa-bars{
+        margin: 20px;
+        margin-top: 30px;
+        width: 80px;
+        display: inline;
+        float: right;
+    }
+    
+    #cart{
+        display: none;
+    }
+        
+.navlinks{
+    display: none;
+}
+     
+
+.phrases{
+    align-items: center;
+    text-align: center;
+}
+}
