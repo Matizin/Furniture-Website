@@ -23,10 +23,10 @@ $fourcolor: #5A2328;
     
   }
 
-div.about-us{
+.room-image{
+    border: 1px solid black;
     img{
         width:100%;
-        
     }
 }
 div.about-mateUs{
@@ -40,13 +40,16 @@ div.about-mateUs{
 
 
 
-  .room-image img {
-    width:100%;
-    height:200px;
-  }
-  h1{
-    
+  
+  h3{
+    max-height: 80px;
+    min-height:80px;
     text-align: center;
+  }
+
+  a{
+    font-size: large;
+    color: $primaryColor;
   }
 
 }
@@ -61,7 +64,7 @@ div.about-members::after{
 
 .face-photo-container img{
     border-radius: 50%;
-  
+    width: 75%;
 }
 
 .ourName{
@@ -72,6 +75,7 @@ div.about-members::after{
 .descriptionOfUs{
     padding-bottom: 30px;
 }
+
 
 
 
