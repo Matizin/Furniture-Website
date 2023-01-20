@@ -17,16 +17,20 @@
   justify-content: center;
 }
 .company-description p {
+  color: black !important;
   font-size: large;
 }
 
 div.about-members {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
 .room-image img {
-  border: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
   width: 100%;
   height: auto;
   opacity: 0.5;
