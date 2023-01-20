@@ -1,0 +1,184 @@
+$primaryColor: #C8BFC7;
+$secondaryColor: #7A9B76;
+$thirdcolor: #8A7E72;
+$fourcolor: #5A2328;
+
+* {
+    box-sizing: border-box;
+}
+
+.head {
+    background-color: $thirdcolor ;
+    height: 80px;
+}
+
+.company-description {
+    p {
+        font-size: large; //危険
+    }
+
+    padding: 0px 30px 0px 30px;
+    height: 400px;
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// h2{
+//   padding-left: 30px;
+// }
+//   p.company-description{
+//     // font-family: $;
+//     font-size: 30px;
+//     padding-left: 30px;
+//     padding-right: 30px;
+// }
+
+div.about-members {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.room-image {
+
+    img {
+        border: none;
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+    }
+}
+
+div.about-mateUs {
+    background-color: white;
+    margin: 5px;
+    box-shadow: 5px 10px gray;
+    //     float: left;
+    //   width: 33.33%;
+    padding: 10px;
+    text-align: center;
+
+
+
+
+    h3 {
+        max-height: 80px;
+        min-height: 80px;
+        text-align: center;
+    }
+
+    a {
+        font-size: large;
+        color: $primaryColor;
+    }
+
+}
+
+div.about-members::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+
+.face-photo-container img {
+    border-radius: 50%;
+    width: 75%;
+}
+
+.ourName {
+    font-size: 30px;
+    text-align: center;
+    height: 50px;
+    margin-top: 0px;
+}
+
+.descriptionOfUs {
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: large;
+}
+
+@media (max-width: 820px) {
+    div.about-members {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // width:100%;
+    }
+
+    div.about-mateUs {
+        width: 100%;
+        height: 400px;
+        display: grid;
+
+        grid-template-rows: 50px 250px 50px;
+        grid-template-columns: 1fr 1fr;
+        // p{
+        //   font-size: medium;
+        // }
+    }
+
+    div.face-photo-container {
+        // display: grid;
+        grid-row: 2/3;
+    }
+
+    a.gitHubLink {
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+
+    a.gitHubLink:hover {
+        color: $fourcolor;
+    }
+
+    .descriptionOfUs {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-top: 25px;
+        margin-top: 60px;
+    }
+
+
+    div.about-mateUs h3 {
+        grid-column: 2/3;
+        max-height: 80px;
+        min-height: 80px;
+
+
+    }
+
+    p {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 375px) {
+    div.about-members {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    div.about-mateUs {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    p {
+        font-size: medium;
+    }
+}
