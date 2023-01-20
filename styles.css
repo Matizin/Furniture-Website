@@ -69,11 +69,15 @@ div.about-members::after {
   }
   div.about-mateUs {
     width: 100%;
+    display: grid;
+    /* grid-area: header; */
+    grid-template-rows: 50px 250px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 375px) {
   div.about-members {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
   }
