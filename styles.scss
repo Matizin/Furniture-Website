@@ -1,6 +1,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Satisfy&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Satisfy&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto+Condensed:wght@300&family=Satisfy&display=swap';
+@import "aboutUs.scss";
 $primaryColor: #C8BFC7;
 $secondaryColor: #7A9B76;
 $thirdcolor: #8A7E72;
@@ -36,9 +37,9 @@ $secondFont: "Roboto Condensed";
     box-sizing: border-box;
 }
 
-img {
-    height: 100%;
-}
+// img {
+//     height: 100%;
+// }
 
 // body {
 //     font-family: 'Satisfy';
