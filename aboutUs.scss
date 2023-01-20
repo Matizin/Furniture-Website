@@ -11,6 +11,7 @@ $fourcolor: #5A2328;
     background-color: $thirdcolor ;
     height: 80px;
 }
+.about-us{background-color: $thirdcolor;}
 
 .company-description {
     p {
@@ -37,18 +38,19 @@ $fourcolor: #5A2328;
 // }
 
 div.about-members {
-
+    position:relative;
     display: flex;
     justify-content: center;
 
 }
 
-.room-image {
-
-    img {
-        border: none;
-        width: 100%;
-        height: auto;
+.room-image{
+   
+    img{
+      object-fit: cover;
+      position:absolute;
+        width:100%;
+        height:auto;
         opacity: 0.5;
     }
 }
@@ -107,6 +109,10 @@ p {
     font-size: large;
 }
 
+// img {
+//     height: 100%;
+// }
+
 @media (max-width: 820px) {
     div.about-members {
 
@@ -139,7 +145,7 @@ p {
     }
 
     a.gitHubLink:hover {
-        color: $fourcolor;
+        color: $fourcolor !important;
     }
 
     .descriptionOfUs {

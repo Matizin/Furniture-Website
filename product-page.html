@@ -5,15 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/172794c827.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Single Product</title>
 </head>
 
 <body>
-    <nav class="nav-bar">
+    <!-- <nav class="nav-bar">
         <h2>LOGO</h2>
-    </nav>
+    </nav> -->
+    <nav id='menu'>
+        <div class="nav-bar">
+            <ul class="ul">
+                <img class="logo" src="https://www.shutterstock.com/image-vector/furniture-logo-set-260nw-499433050.jpg"
+                    alt="">
 
+                <div class="navlinks">
+                    <li><a href=''>Home</a></li>
+                    <li><a href='AboutUs.html'>About us</a></li>
+                    <li><a href=''>Contact Us</a></li>
+                    <li><a href=''>Top Sales</a></li>
+                    <img id="cart"
+                        src="https://cdn.iconscout.com/icon/free/png-256/cart-grocery-store-shopping-shop-30488.png?w=128&f=avif"
+                        alt="">
+            </ul>
+        </div>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+
+    </nav>
+    <!-- </div> -->
+    <!--END OF NAV BAR-->
     <section>
         <div class="item-container single-product">
             <div class="row">
@@ -97,7 +118,7 @@
             </div>
         </div>
     </section>
-    <footer class="about-us">About us</footer>
+    
 
 
     <!-- <script>
@@ -118,6 +139,48 @@
         }
 
     </script> -->
+
+    <footer class="about-us">
+        <div class="socialmedia">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="threediviation">
+            <div class="footer-left">
+                <h3 class="signup">Sign up for exclusive offers</h3>
+                <div class="subscription-input">
+                    <form>
+                        <input type="text" id="email" name="email" placeholder=" Enter your email here">
+                        <button class="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <ul>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">website disclaimer</a></li>
+                    <li><a href="#">store policy</a></li>
+                    <li><a href="#">login info</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">Interior design service</a></li>
+                    <li><a href="#">delivery service</a></li>
+                    <li><a href="#">trade program</a></li>
+
+                    <li><a href="#">careers</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">blogs</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="cp_hr01" />
+        <p class="copyright">&copy;Copyright. Cuisinebo. All Rights Reserved</p>
+    </footer>
 </body>
 
 </html>
