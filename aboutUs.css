@@ -74,6 +74,22 @@ div.about-members::after {
     grid-template-rows: 50px 250px 50px;
     grid-template-columns: 1fr 1fr;
   }
+  div.face-photo-container {
+    grid-row: 2/3;
+  }
+  a.gitHubLink {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  .descriptionOfUs {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  div.about-mateUs h3 {
+    grid-column: 2/3;
+    max-height: 80px;
+    min-height: 80px;
+  }
 }
 @media (max-width: 375px) {
   div.about-members {
