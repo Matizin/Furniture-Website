@@ -7,8 +7,17 @@
   height: 80px;
 }
 
-p.company-description {
-  font-size: 30px;
+.company-description {
+  padding: 0px 30px 0px 30px;
+  height: 400px;
+  text-align: center;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.company-description p {
+  font-size: large;
 }
 
 div.about-members {
@@ -16,12 +25,11 @@ div.about-members {
   justify-content: center;
 }
 
-.room-image {
-  border: 1px solid black;
-}
 .room-image img {
+  border: none;
   width: 100%;
-  height: 300px;
+  height: auto;
+  opacity: 0.5;
 }
 
 div.about-mateUs {
@@ -53,11 +61,14 @@ div.about-members::after {
 }
 
 .ourName {
+  font-size: 30px;
   text-align: center;
   height: 50px;
+  margin-top: 0px;
 }
 
 .descriptionOfUs {
+  margin-top: 50px;
   padding-bottom: 30px;
 }
 
@@ -69,17 +80,43 @@ div.about-members::after {
   }
   div.about-mateUs {
     width: 100%;
+    height: 500px;
     display: grid;
-    /* grid-area: header; */
-    grid-template-rows: 50px 250px;
+    grid-template-rows: 50px 250px 50px;
     grid-template-columns: 1fr 1fr;
+  }
+  div.face-photo-container {
+    grid-row: 2/3;
+  }
+  a.gitHubLink {
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+  a.gitHubLink:hover {
+    color: #5A2328;
+  }
+  .descriptionOfUs {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-top: 25px;
+    margin-top: 60px;
+  }
+  div.about-mateUs h3 {
+    grid-column: 2/3;
+    max-height: 80px;
+    min-height: 80px;
   }
 }
 @media (max-width: 375px) {
   div.about-members {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  div.about-mateUs {
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
 }
 .nav-bar {
